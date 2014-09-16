@@ -5,6 +5,7 @@ package DespertadorQuartzTeste;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import DespertadorQuartz.Despertador;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -38,7 +39,14 @@ public class DespertadorTeste {
     }
     
     @Test
-    public void setCallBackTeste(){
+    public void setCallBackTesteTrue(){
+        assertTrue(null, true);
+    }
+    
+    @Test
+    public void setCallBackTesteFalse(){
+        Despertador desp = new Despertador();
+        //assertFalse(desp.setCallBack(), true);
     }
 
     // TODO add test methods here.
