@@ -10,7 +10,7 @@ import org.quartz.Scheduler;
 import org.quartz.SchedulerFactory;
 import org.quartz.impl.StdSchedulerFactory;
 
-public class TriggerDespertador {
+public class TriggerDespertador implements Runnable{
     
     public void agendamentoDespertador(){
         try{        
@@ -32,7 +32,12 @@ public class TriggerDespertador {
             sched.start();
             
         }catch(Exception x){
-            System.out.println("Erro: " + x.getMessage());
+            System.out.println("Erro ao iniciar crontab: " + x.getMessage());
         }
+    }
+
+    @Override
+    public void run() {
+        agendamentoDespertador();
     }
 }

@@ -12,10 +12,10 @@ package DespertadorQuartz;
 public class Main {
 
     public static void main(String[] args) {
-        Despertador desp1 = new Despertador();
-        desp1.setChamadaMetodo(VariaveisFinaisEstaticas.ESCOLHE_METODO_REMOVER);
-        Thread t1 = new Thread(desp1);
-        t1.start();
+//        Despertador desp1 = new Despertador();
+//        desp1.setChamadaMetodo(VariaveisFinaisEstaticas.ESCOLHE_METODO_REMOVER);
+//        Thread t1 = new Thread(desp1);
+//        t1.start();
         
 //        Despertador desp2 = new Despertador();
 //        desp2.setChamadaMetodo(VariaveisFinaisEstaticas.ESCOLHE_METODO_DESPERTAR);
